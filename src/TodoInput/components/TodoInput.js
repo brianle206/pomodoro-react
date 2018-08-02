@@ -25,15 +25,17 @@ class TodoInput extends Component {
 
 			<div className='row control-row'>
 			<h2 className='text-primary'>Todo List</h2>
-				<div className='form-group'>
+			<div className='row control-row'>
+				<div className=''>
 					<div className='col-sm-9'>
 						<input className='form-control' type='text' value={this.state.value} onChange={this.handleChange} />
 					</div>
 				</div>
 				
 				<div className='col-sm-3'>
-					<button className='btn btn-primary' onClick={()=> this.addTodo(this.state.value)}>Add</button>
+					<button className='form-control btn btn-primary pull-right' onClick={()=> this.addTodo(this.state.value)}>Add</button>
 				</div>
+			</div>
 			</div>
 		)
 	}

@@ -12,7 +12,7 @@ class TodoItem extends Component{
 
 	render(){
 		return(
-			<div className='row'>
+			<div className='row control-row'>
 				<div className='col-sm-3'>
 				<button className='btn btn-success' onClick={(e)=> this.removeTodo(this.props.id) }>Complete!</button>
 				</div>
